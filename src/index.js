@@ -18,9 +18,9 @@ function handleServer(req, res) {
             'content-type':'application/jason'
         });
         res.write(
-            JASON.stringify({
+            JSON.stringify({
             phone: '18602100000',
-            email: 'guestcaredominos@jublfood.com'
+           email: 'guestcaredominos@jublfood.com'
           })
         );
         res.end();
