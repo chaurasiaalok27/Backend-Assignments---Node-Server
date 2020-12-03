@@ -13,7 +13,7 @@ function handleServer(req, res) {
     else if(req.url.startsWith("/contact") && req.method === 'GET')
     {
        res.writeHead(200,{
-           'content-type':'application/jason'
+           'content-type':'application/json'
        });
        res.write(
            JSON.stringify({
