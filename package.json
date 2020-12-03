@@ -1,24 +1,19 @@
 {
-  "name": "backend-assignments---node-server",
+  "name": "node-server-testing",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iamalok4669/Backend-Assignments---Node-Server.git"
+    "test": "mocha '__tests__/*.js' --reporter mochawesome --recursive  --timeout 60000 --exit"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iamalok4669/Backend-Assignments---Node-Server/issues"
-  },
-  "homepage": "https://github.com/iamalok4669/Backend-Assignments---Node-Server#readme",
-  "description": "",
   "dependencies": {
-    "expres": "^0.0.5",
-    "express": "^4.17.1"
+    "mochawesome": "6.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.2.1"
   }
 }
